@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--Button to pick image-->
+        <Button
+            android:id="@+id/btn_img_pick"
+            android:text="Choose Image"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--ImageView where image will be set-->
+        <ImageView
+            android:id="@+id/img_auto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_black_24"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/tv_image_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_uri"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_black_24"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/tv_image_uri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_file_uri"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_black_24"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/tv_image_file_uri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
